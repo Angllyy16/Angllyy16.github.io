@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego para mi novio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bienvenida" class="popup">
+  <div class="popup-content">
+    <h1>Hola mi amor!💓</h1>
+    <p>Algo random por los 8 meses :)</p>
+    <button onclick="cerrarPopup()">Empezar</button>
+  </div>
+</div>
+
+<div id="progress-bar-container">
+  <div id="progress-bar"></div>
+</div>
+
+<h1>𝘿𝙚𝙨𝙘𝙪𝙗𝙧𝙚 𝙡𝙖 𝙞𝙢𝙖𝙜𝙚𝙣...</h1>
+<p>Respondiendo las preguntas ;)</p>
+
+<div id="juego">
+ <!-- Imagen oculta con opacidad 0 al principio -->
+ <img src="imagen.jpg" id="imagen" alt="Imagen Oculta" style="opacity: 0; transition: opacity 1s;">
+    <button onclick="hacerPregunta()">Adelante!</button>
+</div>
+
+<!-- Preguntas -->
+<div id="preguntas">
+    <div id="pregunta1">
+        <p>‎‧₊˚✧First kiss✧˚₊‧</p>
+        <input type="text" id="respuesta1">
+        <button onclick="verificarRespuesta1()">Responder</button>
+    </div>
+
+    <div id="pregunta2">
+        <p>Último día en que nos vimos...😿</p>
+        <input type="text" id="respuesta2">
+        <button onclick="verificarRespuesta2()">Responder</button>
+    </div>
+
+    <div id="pregunta3">
+        <p>El mes que por primera vez hablamos ฅ^._.^ฅ</p>
+        <input type="text" id="respuesta3">
+        <button onclick="verificarRespuesta3()">Responder</button>
+    </div>
+
+    <div id="pregunta4">
+        <p>Camisas robadas🙂‍↕️</p>
+        <input type="text" id="respuesta4">
+        <button onclick="verificarRespuesta4()">Responder</button>
+    </div>
+
+    <div id="pregunta5">
+        <p>Te</p>
+        <input type="text" id="respuesta5">
+        <button onclick="verificarRespuesta5()">Responder</button>
+    </div>
+
+    <div id="pregunta6">
+        <p>El día que fui a tu casa yo sola...🤓</p>
+        <input type="text" id="respuesta6">
+        <button onclick="verificarRespuesta6()">Responder</button>
+    </div>
+
+    <div id="pregunta7">
+        <p>I miss</p>
+        <input type="text" id="respuesta7">
+        <button onclick="verificarRespuesta7()">Responder</button>
+    </div>
+</div>
+
+<audio id="correct-sound" src="ruta-del-sonido.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
